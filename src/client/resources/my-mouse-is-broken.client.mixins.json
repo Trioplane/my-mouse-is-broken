@@ -1,0 +1,11 @@
+{
+	"required": true,
+	"package": "trplnr.my_mouse_is_broken.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"MouseInvoker"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

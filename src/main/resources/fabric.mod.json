@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "my-mouse-is-broken",
+	"version": "${version}",
+	"name": "My Mouse is Broken",
+	"description": "Lets you use your arrow keys to move your camera!",
+	"authors": [
+		"Trplnr"
+	],
+	"license": "MIT",
+	"icon": "assets/my-mouse-is-broken/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"trplnr.my_mouse_is_broken.MyMouseIsBroken"
+		],
+		"client": [
+			"trplnr.my_mouse_is_broken.MyMouseIsBrokenClient"
+		]
+	},
+	"mixins": [
+		"my-mouse-is-broken.mixins.json",
+		{
+			"config": "my-mouse-is-broken.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.16.5",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
